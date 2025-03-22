@@ -20,7 +20,7 @@ Denne applikation er udviklet i R og visualiserer flyaktivitet over og omkring N
 
 📷 Eksempel:
 
-![Flysporing](images/flysporing_example.png)
+![Flysporing](images/flysporing.png)
 
 ---
 
@@ -29,7 +29,7 @@ Heatmappet viser alle registrerede positioner med vægtning efter tæthed.
 
 📷 Eksempel:
 
-![Heatmap](images/heatmap_example.png)
+![Heatmap](images/heatmap.png)
 
 ---
 
@@ -38,7 +38,7 @@ En samlet visning af alle flypositioner i dataen, med popup-information for hver
 
 📷 Eksempel:
 
-![Alle positioner](images/all_positions_example.png)
+![Alle positioner](images/all_positions.png)
 
 ---
 
@@ -46,9 +46,9 @@ En samlet visning af alle flypositioner i dataen, med popup-information for hver
 
 | Land                                      | ICAO-eksempler | Beskrivelse                                           |
 |------------------------------------------|----------------|--------------------------------------------------------|
-| Democratic People's Republic of Korea    | `KOR`          | Nordkoreanske fly (primært mål)                      |
-| Republic of Korea (South Korea)          | `H91`          | Sydkoreanske fly (regional interesse)                |
-| United States of America (USA)           | `AAL`          | Amerikanske fly (international overvågning og tilstedeværelse) |
+| Democratic People's Republic of Korea    | `7277d0`          | Nordkoreanske fly (primært mål)                      |
+| Republic of Korea (South Korea)          | `71cb15`          | Sydkoreanske fly (regional interesse)                |
+| United States of America (USA)           | `ae64a7`          | Amerikanske fly (international overvågning og tilstedeværelse) |
 
 *(Baseret på observerede fly og `origin_country` i datasættet.)*
 
@@ -69,5 +69,5 @@ Appen er deployet på shinyapps.io ved hjælp af `rsconnect`:
 
 ```r
 library(rsconnect)
-rsconnect::setAccountInfo(name='lukasbachcouzy', token='XXX', secret='XXX')
+rsconnect::setAccountInfo(name='USER', token='XXX', secret='XXX')
 rsconnect::deployApp('/path/to/app-folder')
